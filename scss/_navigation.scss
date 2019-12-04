@@ -1,0 +1,34 @@
+.navbar-light {
+	.navbar-brand {
+		span {
+			strong {
+				text-transform: capitalize;
+				color: $primary-color;
+			}
+			text-transform: uppercase;
+			color: $secondary-color;
+		}
+	}
+	.navbar-nav {
+		.nav-item {
+			padding: 0 10px;
+		}
+		.active {
+			.nav-link {
+				background: $primary-color;
+			}
+		}
+		.nav-link {
+			color: $secondary-color;
+			&:hover {
+				background: $primary-color;
+				transform: translateX(3px);
+				transition: transform .3s ease-in-out;
+			}
+		}
+	}
+}
+.nav-scroll {
+	padding: 3px 0;
+	transition: padding .3s linear;
+}

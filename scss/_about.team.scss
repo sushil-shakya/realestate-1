@@ -1,0 +1,71 @@
+.team {
+	@include section;
+	.section-title {
+		h2 {
+			@include section-title;
+			color: #000;
+		}
+	}
+	.img {
+		max-height: 380px;
+		overflow: hidden;
+		position: relative;
+		img {
+			transition: all .3s linear;
+		}
+		&:hover .agent-info {
+			display: block !important;
+		}
+		.bg {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,0.5);
+		}
+		.agent-info {
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 30px 20px;
+			background: rgba(0, 255, 0, 0.3);
+			display: none;
+			.agent-name {
+				text-transform: capitalize;
+				color: #222;
+				font-weight: 700;
+				font-size: 30px; 
+				letter-spacing: 3px;
+			}
+			.agent-desc {
+				color: #fff;
+				font-weight: 400;
+				font-size: 18px;
+			}
+			.email, .phone {
+				a {
+					text-decoration: none;
+					color: #222;
+				}
+			}
+			.social-links {
+				ul {
+					list-style: none;
+					display: flex;
+					padding: 0;
+					li {
+						padding: 0 10px;
+						a {
+							text-decoration: none;
+							color: #fff;
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

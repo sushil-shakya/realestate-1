@@ -1,0 +1,62 @@
+.news {
+	@include section;
+	background: #eee;
+	.section-title {
+		h2 {
+			@include section-title;
+		}
+	}
+	.all-links {
+		a {
+			@include all-links;
+			&:hover span i {
+				@include all-links-hover;
+			}
+		}
+	}
+	.img {
+		max-height: 350px;
+		overflow: hidden;
+		position: relative;
+		img {
+			transition: all .3s ease-in-out;
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
+		.bg {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,0.3);
+		}
+		.blog-info {
+			position: absolute;
+			bottom: 0;
+			padding: 20px;
+			.category {
+				display: inline-block;
+				background: green;
+				color: lightgreen;
+				padding: 5px 8px;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 20px;
+			}
+			.blog-heading {
+				text-transform: capitalize;
+				background: rgba(0,0,0,0.3);
+				padding: 5px 8px;
+				color: #fff;
+			}
+			.blog-date {
+				text-transform: capitalize;
+				background: rgba(0,0,0,0.3);
+				padding: 5px 8px;
+				color: #fff;
+			}
+		}
+	}
+}

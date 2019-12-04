@@ -1,0 +1,145 @@
+//Smartphones
+@include xs {
+	// Navigation
+	.navbar-light {
+		.navbar-brand {
+			span {
+				font-size: 17px;
+			}
+		}
+		.navbar-toggler {
+			border-color: #f8f9fa !important;
+		}
+	}
+	// banner
+	.banner-text {
+		h1 {
+			font-size: 37px !important;
+		}
+	}
+	
+	.services, .properties, .agents, .news, .testimonials, footer {
+		@include section;
+		padding: 50px 0 !important;
+		.section-title {
+			h2 {
+				/*@include section-title;*/
+				font-size: 20px;
+			}
+		}
+		.all-links {
+			a {
+				font-size: 15px !important;
+			}
+		}
+	}
+	// testimonials 
+	.testimonials {
+		.item {
+			flex-direction: column;
+			.img {
+				img {
+					width: 100% !important;
+				}
+			}
+			.text {
+				width: 100% !important;
+				padding: 0 !important;
+				margin-top: 10px;
+				p {
+					margin-top: 3px !important;
+				}
+			}
+		}
+	}
+	// About Page
+	.heading {
+		padding: 10px 0 !important;
+		.head-title {
+			h2 {
+				font-size: 18px;
+			}
+		}
+		.breadcrumb {
+			justify-content: flex-start !important;
+			padding: 0 0 0 0;
+		}
+	}
+	.about-banner {
+		.img {
+			margin-left: 15px !important;
+			
+		}
+		.banner-text {
+			padding: 5px !important;
+			h2 {
+				font-size: 15px;
+			}
+		}
+	}
+	.about-company {
+		.company-text {
+			h3 {
+				padding: 25px 0;
+				font-size: 25px !important;
+			}
+		}
+	}
+	.team {
+		padding: 0 !important;
+		.section-title {
+			h2 {
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+// Tablets
+@include sm {
+	//Navigation 
+	.navbar-light {
+		.navbar-brand {
+			span {
+				font-size: 28px;
+			}
+		}
+		.navbar-toggler {
+			border-color: #f8f9fa !important;
+		}
+	}
+	.services, .properties, .agents, .news, .testimonials, footer {
+		@include section;
+		padding: 50px 0 !important;
+		.section-title {
+			h2 {
+				/*@include section-title;*/
+				font-size: 25px;
+			}
+		}
+		.all-links {
+			a {
+				font-size: 18px !important;
+			}
+		}
+	}
+	// testimonials 
+	.testimonials {
+		.item {
+			flex-direction: column;
+			.img {
+				img {
+					width: 100% !important;
+				}
+			}
+			.text {
+				width: 100% !important;
+				padding: 0 !important;
+				margin-top: 10px;
+				p {
+					margin-top: 3px !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.services {
+	@include section;
+	.section-title {
+		h2 {
+			@include section-title;
+		}
+	}
+	.box {
+		.box-title {
+			position: relative;
+			.icon {
+				i {
+				
+					border: 3px solid $primary-color;
+					padding: 10px 50px;
+				}
+			}
+			h3 {
+				text-transform: capitalize;
+				color: #000;
+				font-weight: 700;
+				font-size: 35px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 120px;
+			}
+		}
+		.box-body {
+			margin: 20px 0;
+			padding: 14px 0;
+			p {
+				color: #555;
+				line-height: 1.4;
+				font-weight: 400;
+			}
+		}
+		.box-footer {
+			a {
+				text-decoration: none;
+				color: #000;
+				text-transform: capitalize;
+				&:hover i {
+					transform: translateX(10px);
+					transition: transform .4s ease-in-out;
+				}
+			}
+		}
+	}
+}

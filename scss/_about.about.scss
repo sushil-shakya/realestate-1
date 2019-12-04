@@ -1,0 +1,32 @@
+.about-company {
+	position: relative;
+	@include section;
+	.slogan {
+		transform: rotate(-90deg);
+		position: absolute;
+		top: 66px;
+		width: 300px;
+		h4 {
+			text-transform: capitalize;
+			font-weight: 700;
+			color: #555;
+		}
+	}
+	.company-text {
+		h3 {
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 28px;
+			color: #000;
+			span {
+				color: $primary-color;
+			}
+			.second {
+				color: $secondary-color;
+			}
+		}
+		p {
+			color: #555;
+		}
+	}
+}

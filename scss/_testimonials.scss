@@ -1,0 +1,35 @@
+.testimonials {
+	@include section;
+	.section-title {
+		h2 {
+			@include section-title;
+		}
+	}
+	.item {
+		display: flex;
+		.text {
+			padding: 0 50px;
+			.fa {
+				width: 30px;
+				height: 30px;
+				background: green;
+				border-radius: 50px;
+				text-align: center;
+				color: lightgreen;
+				padding-top: 5px;
+			}
+			p {
+				font-style: italic;
+			}
+		}
+	}
+	.owl-nav {
+		display: none;
+	}
+	.owl-theme {
+		.owl-dots {
+			bottom: -50px;
+			transition: all .5s linear;
+		}
+	}
+}

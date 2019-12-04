@@ -1,0 +1,25 @@
+.heading {
+	margin-top: 76px;
+	padding: 40px 0;
+	.head-title {
+		h2 {
+			text-transform: capitalize;
+			color: #000;
+			border-left: 3px solid $primary-color;
+			padding: 8px 0 8px 16px;
+		}
+	}
+	.breadcrumb {
+		background: transparent;
+		justify-content: flex-end;
+		.breadcrumb-item {
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+		}
+		.breadcrumb-item .active {
+			color: $secondary-color;
+		}
+	}
+}

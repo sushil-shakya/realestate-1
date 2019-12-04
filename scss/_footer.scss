@@ -1,0 +1,44 @@
+footer {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	background: #eee;
+	.box {
+		.title {
+			text-transform: capitalize;
+			color: $secondary-color;
+		}
+		p {
+			a {
+				text-decoration: none;
+				color: #555;
+			}
+		}
+		.email, .phone {
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+		}
+		.fa-ul {
+			li {
+				color: #555;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		.media-body {
+			h5 {
+				color: #555;
+				font-size: 18px;
+			}
+		}
+		.social-links {
+			display: flex;
+			li {
+				padding: 0 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+.banner {
+	margin-top: 56px;
+	.banner-img-1 {
+		height: 80vh;
+		background: url(../images/slide-1.jpg);
+		@include banner;
+	}
+	.banner-img-2 {
+		height: 80vh;
+		background: url(../images/slide-2.jpg);
+		@include banner;
+	}	
+	.banner-img-3 {
+		height: 80vh;
+		background: url(../images/slide-3.jpg);
+		@include banner;
+	}
+	.banner-text {
+		height: 80vh;
+		display: flex;
+		align-items: center;
+		color: #fff;
+		h1 {
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 50px;
+			letter-spacing: 2px;
+		}
+		h4 {
+			background: lightgreen;
+			color: green;
+			display: inline-block;
+			padding: 10px;
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 30px;
+			letter-spacing: 2px;
+		}
+	}
+	.owl-nav {
+		display: none;
+	}
+}
+.owl-theme {
+	.owl-dots {
+		margin-top: 0px;
+		z-index: 1200;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 8px;
+		.owl-dot.active {
+			span {
+				background: lightgreen !important;
+				width: 45px !important;
+				height: 15px !important;
+				border-radius: 0 !important;
+			}
+		}
+		.owl-dot {
+			span {
+				background: green;
+				width: 30px !important;
+				height: 15px !important;
+				border-radius: 0 !important;
+			}
+		}
+	}
+}
